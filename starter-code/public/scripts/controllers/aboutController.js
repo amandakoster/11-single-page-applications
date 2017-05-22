@@ -6,11 +6,10 @@ var app = app || {};
 
   // TODOsorta: Define a function that hides all main section elements, and then reveals just the #about section:
   aboutController.handleAboutNav = function() {
-    $('.main-nav').on('click', '.tab:last', function() {
-      $('.tab-content').hide();
-      $(`#about`).fadeIn();
-    });
+    // $('.main-nav').on('click', '.tab:last', function() {
+    $('.tab-content').hide();
+    $(`#about`).fadeIn();
+    // });
   };
-
   module.aboutController = aboutController;
 })(app);
