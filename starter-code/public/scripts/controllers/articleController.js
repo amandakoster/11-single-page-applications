@@ -8,13 +8,10 @@ var app = app || {};
   // Also be sure to hide all the main section elements, and reveal the #articles section:
 
   articleController.handleArticleNav = function() {
-    $('.main-nav').on('click', '.tab:first', function() {
-      $('.tab-content').hide();
-      $(`#articles`).fadeIn();
-    });
-    $('.main-nav .tab:first').click();
+    app.articleView.initIndexPage();
+    $('.tab-content').hide();
+    $(`#articles`).fadeIn();
   };
-
 
   module.articleController = articleController;
 })(app);
