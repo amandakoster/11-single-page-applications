@@ -7,9 +7,10 @@ var app = app || {};
   // code that used to be in index.html.
   // Also be sure to hide all the main section elements, and reveal the #articles section:
   adminController.handleAdminNav = function() {
-    app.Article.fetchAll(app.adminView.initAdminPage);
+    // app.Article.fetchAll(app.adminView.initAdminPage);
     $('.tab-content').hide();
-    $(`#admin`).fadeIn();
+    console.log('adminController');
+    $(`#admin #about`).fadeIn();
   };
 
   module.adminController = adminController;
